@@ -1,0 +1,3 @@
+Flask==1.1.2
+jamstack==0.1.0
+livereload==2.6.3
