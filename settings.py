@@ -1,6 +1,6 @@
 import json
 
-OUTPUT_FOLDER = 'build/'
+OUTPUT_FOLDER = 'docs/'
 info = None
 
 with open('info.json') as f:
