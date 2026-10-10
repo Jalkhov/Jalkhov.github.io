@@ -44,7 +44,7 @@ main {
 
 .nav a { color: var(--dim); border-bottom: none; }
 .nav a:hover { color: var(--red); text-shadow: none; }
-.nav-home { color: var(--purple); font-weight: bold; }
+.nav a.nav-home { color: var(--purple); font-weight: bold; }
 
 .banner {
 	color: var(--purple);
