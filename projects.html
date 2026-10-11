@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en" data-title-en="projects · Pedro Torcatt" data-title-es="proyectos · Pedro Torcatt">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Proyectos · Pedro Torcatt</title>
-	<meta name="description" content="Proyectos de Pedro Torcatt">
+	<title>projects · Pedro Torcatt</title>
+	<meta name="description" content="Pedro Torcatt's projects">
 	<meta name="author" content="Jalkhov">
 	<meta name="theme-color" content="#0a0a0f">
 	<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect width='16' height='16' fill='%23bd34fe'/></svg>">
@@ -15,50 +15,66 @@
 	<main>
 		<nav class="nav">
 			<a class="nav-home" href="index.html">~/jalkhov</a>
-			<a href="projects.html">proyectos</a>
+			<div class="nav-right">
+				<a href="projects.html"><span lang="es">proyectos</span><span lang="en">projects</span></a>
+				<div class="lang-toggle" role="group" aria-label="language">
+					<button type="button" data-lang="en" aria-pressed="true">en</button>
+					<span aria-hidden="true">|</span>
+					<button type="button" data-lang="es" aria-pressed="false">es</button>
+				</div>
+			</div>
 		</nav>
 
-		<h1 class="page-title">// proyectos</h1>
-		<p class="prompt"><span class="user">pedro@jalkhov</span>:<span class="path">~</span>$ ls ~/proyectos<span class="cursor">▊</span></p>
+		<h1 class="page-title">// <span lang="es">proyectos</span><span lang="en">projects</span></h1>
+		<p class="prompt"><span class="user">latam@jalkhov</span>:<span class="path">~</span>$ ls ~/<span lang="es">proyectos</span><span lang="en">projects</span><span class="cursor">▊</span></p>
 
 		<ul class="projects">
 			<li class="project">
 				<h3><a href="https://github.com/Jalkhov/hackbar-future">hackbar-future</a></h3>
-				<p>La extensión Hackbar para pentesters, portada a Firefox Quantum: más funciones, más compacta y rediseñada.</p>
+				<p>
+					<span lang="es">La extensión Hackbar para pentesters, portada a Firefox
+					Quantum: más funciones, más compacta y rediseñada.</span>
+					<span lang="en">The Hackbar extension for pentesters, ported to Firefox
+					Quantum: more features, more compact, redesigned.</span>
+				</p>
 				<p class="meta">JavaScript · <span class="star">★ 13</span></p>
 			</li>
 			<li class="project">
-				<h3><a href="https://github.com/Jalkhov/docspro">docspro</a></h3>
-				<p>Información sobre los repos de traducción de FlaskCWG.</p>
-				<p class="meta">Python · <span class="star">★ 8</span></p>
-			</li>
-			<li class="project">
 				<h3><a href="https://github.com/Jalkhov/neo-hackbar">neo-hackbar</a></h3>
-				<p>El hackbar clásico, mejorado al 1000%.</p>
+				<p>
+					<span lang="es">El hackbar clásico, mejorado al 1000%.</span>
+					<span lang="en">Classic hackbar but 1000% improved.</span>
+				</p>
 				<p class="meta">JavaScript · <span class="star">★ 4</span></p>
 			</li>
+		</ul>
+
+		<p class="section-note">// <span lang="es">bueno, a veces sí hago cosas de diseño, por pura conveniencia</span><span lang="en">fine, sometimes I do design stuff — purely out of convenience</span></p>
+
+		<ul class="projects">
 			<li class="project">
-				<h3><a href="https://github.com/Jalkhov/apyk">apyk</a></h3>
-				<p>Haz backups de las aplicaciones instaladas en tu equipo.</p>
-				<p class="meta">Python · <span class="star">★ 2</span></p>
+				<h3><a href="https://github.com/Jalkhov/dark-nova">dark-nova</a></h3>
+				<p>
+					<span lang="es">Un tema oscuro moderno para Pale Moon, inspirado en el
+					rediseño Nova de Mozilla Firefox.</span>
+					<span lang="en">A modern dark theme for Pale Moon, inspired by the
+					Mozilla Firefox Nova redesign.</span>
+				</p>
+				<p class="meta">CSS</p>
 			</li>
 			<li class="project">
-				<h3><a href="https://github.com/Jalkhov/octodir">octodir</a></h3>
-				<p>Descarga directorios individuales de cualquier repositorio de GitHub.</p>
-				<p class="meta">Python · <span class="star">★ 1</span></p>
-			</li>
-			<li class="project">
-				<h3><a href="https://github.com/Jalkhov/pixelpainter">pixelpainter</a></h3>
-				<p>Convierte imágenes en una tabla HTML, píxel a píxel.</p>
-				<p class="meta">Python · <span class="star">★ 1</span></p>
-			</li>
-			<li class="project">
-				<h3><a href="https://github.com/Jalkhov/fb-chat-deleter">fb-chat-deleter</a></h3>
-				<p>Borra múltiples chats de Facebook a la vez, rápido.</p>
-				<p class="meta">JavaScript · <span class="star">★ 1</span></p>
+				<h3><a href="https://github.com/Jalkhov/marge">marge</a></h3>
+				<p>
+					<span lang="es">Un tema suave inspirado en Mariana, el color scheme
+					de Sublime Text 4.</span>
+					<span lang="en">A soft theme inspired by Mariana, the Sublime
+					Text 4 color scheme.</span>
+				</p>
+				<p class="meta">Sublime Text</p>
 			</li>
 		</ul>
 	</main>
-	<footer>© 2026 Pedro Torcatt · hecho a mano, sin frameworks</footer>
+	<footer>© 2026 Pedro Torcatt · <span lang="es">primero haz que funcione, luego hazlo bonito</span><span lang="en">first make it work, then make it pretty</span></footer>
+	<script src="assets/lang.js" defer></script>
 </body>
 </html>

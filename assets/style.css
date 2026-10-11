@@ -10,6 +10,10 @@
 
 * { box-sizing: border-box; }
 
+/* Idioma: el lang de <html> decide qué textos existen (ver assets/lang.js) */
+html[lang="en"] [lang="es"],
+html[lang="es"] [lang="en"] { display: none; }
+
 body {
 	margin: 0;
 	min-height: 100vh;
@@ -45,6 +49,20 @@ main {
 .nav a { color: var(--dim); border-bottom: none; }
 .nav a:hover { color: var(--red); text-shadow: none; }
 .nav a.nav-home { color: var(--purple); font-weight: bold; }
+
+.nav-right { display: flex; align-items: baseline; gap: 1.25rem; }
+
+.lang-toggle { display: flex; align-items: baseline; gap: 0.35rem; font-size: 0.9rem; }
+.lang-toggle button {
+	background: none;
+	border: none;
+	padding: 0;
+	color: var(--dim);
+	font: inherit;
+	cursor: pointer;
+}
+.lang-toggle button[aria-pressed="true"] { color: var(--red); }
+.lang-toggle button:hover { color: var(--purple); }
 
 /* VT323, terminal retro (SIL OFL 1.1 — ver fonts/OFL.txt) */
 @font-face {
@@ -121,6 +139,8 @@ a:hover {
 .project .meta { color: var(--dim); font-size: 0.85rem; }
 
 .star { color: var(--red); }
+
+.section-note { color: var(--dim); margin: 2.75rem 0 0; }
 
 footer {
 	max-width: 46rem;

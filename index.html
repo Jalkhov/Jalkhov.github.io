@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Pedro Torcatt</title>
-	<meta name="description" content="Pedro Torcatt — desarrollador backend">
+	<meta name="description" content="Pedro Torcatt — backend lover: task automation, servers, open source, scripting">
 	<meta name="author" content="Jalkhov">
 	<meta name="theme-color" content="#0a0a0f">
 	<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><rect width='16' height='16' fill='%23bd34fe'/></svg>">
@@ -15,20 +15,35 @@
 	<main>
 		<nav class="nav">
 			<a class="nav-home" href="index.html">~/jalkhov</a>
-			<a href="projects.html">proyectos</a>
+			<div class="nav-right">
+				<a href="projects.html"><span lang="es">proyectos</span><span lang="en">projects</span></a>
+				<div class="lang-toggle" role="group" aria-label="language">
+					<button type="button" data-lang="en" aria-pressed="true">en</button>
+					<span aria-hidden="true">|</span>
+					<button type="button" data-lang="es" aria-pressed="false">es</button>
+				</div>
+			</div>
 		</nav>
 
 		<h1 class="banner">JALKHOV</h1>
 
-		<p class="prompt"><span class="user">pedro@jalkhov</span>:<span class="path">~</span>$ desarrollador backend<span class="cursor">▊</span></p>
+		<p class="prompt"><span class="user">latam@jalkhov</span>:<span class="path">~</span>$ backend lover<span class="cursor">▊</span></p>
 
-		<p>Soy Pedro Torcatt. Escribo Python, construyo herramientas
-		y a veces rompo cosas hasta que funcionan.</p>
+		<p>
+			<span lang="es">Soy Pedro Torcatt. Me encanta la automatización de tareas
+			y la lógica detrás de los servidores. Detesto el frontend: si se trata
+			de agilizar una tarea, soy el indicado. Amante del open source
+			y del scripting.</span>
+			<span lang="en">I'm Pedro Torcatt. I love task automation and the logic
+			behind servers. I hate frontend — if a job is about making a task
+			faster, I'm the one for it. Open source and scripting lover.</span>
+		</p>
 
 		<ul class="links">
 			<li>> <a href="https://github.com/Jalkhov">github.com/Jalkhov</a></li>
 		</ul>
 	</main>
-	<footer>© 2026 Pedro Torcatt · hecho a mano, sin frameworks</footer>
+	<footer>© 2026 Pedro Torcatt · <span lang="es">primero haz que funcione, luego hazlo bonito</span><span lang="en">first make it work, then make it pretty</span></footer>
+	<script src="assets/lang.js" defer></script>
 </body>
 </html>
