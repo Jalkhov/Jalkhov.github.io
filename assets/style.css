@@ -1,4 +1,5 @@
 :root {
+	color-scheme: dark;
 	--bg: #0a0a0f;
 	--fg: #e2e2e8;
 	--dim: #7a7a92;
@@ -99,8 +100,55 @@ a:hover {
 	text-shadow: 0 0 10px rgba(189, 52, 254, 0.8);
 }
 
-.links { list-style: none; padding: 0; }
-.links li { margin: 0.5rem 0; }
+.section-title {
+	font-family: "VT323", monospace;
+	font-weight: 400;
+	color: var(--red);
+	text-shadow: 0 0 10px rgba(255, 51, 102, 0.45);
+	font-size: clamp(1.5rem, 5vw, 2.25rem);
+	letter-spacing: 0.03em;
+	line-height: 1.2;
+	margin: 2.5rem 0 0;
+}
+
+.links-list {
+	list-style: none;
+	padding: 0;
+	margin: 1rem 0 0;
+	display: grid;
+	gap: 0.35rem;
+}
+
+.links .section-note { margin-top: 1.75rem; }
+
+/* Fila de enlace: marca > + destino + descripción, con rejilla alineada */
+.link {
+	display: grid;
+	grid-template-columns: 1ch minmax(0, 15rem) 1fr;
+	align-items: baseline;
+	gap: 0.1rem 1rem;
+	padding: 0.4rem 0.6rem;
+	border-bottom: none;
+	text-shadow: none;
+}
+
+.link::before { content: ">"; color: var(--red); }
+
+.link .what { color: var(--purple); }
+.link .why { color: var(--dim); font-size: 0.85rem; }
+
+.link:hover {
+	background: rgba(189, 52, 254, 0.06);
+	border-left: 2px solid var(--purple);
+	padding-left: calc(0.6rem - 2px);
+	color: var(--purple);
+	text-shadow: none;
+}
+
+@media (max-width: 40rem) {
+	.link { grid-template-columns: 1ch 1fr; }
+	.link .why { grid-column: 2; }
+}
 
 .page-title {
 	font-family: "VT323", monospace;
